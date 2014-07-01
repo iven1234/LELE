@@ -26,6 +26,8 @@ $(document).ready(function() {
 </code>
 </pre>
 
+<img alt="how to work" src="https://raw.githubusercontent.com/iven1234/LELE/master/directly/work.jpg" />
+
 <h2>How it works</h2>
 <hr/>
 <p>first:  you could better have one event object like a button</p>
