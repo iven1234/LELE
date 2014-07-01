@@ -33,4 +33,4 @@ $(document).ready(function() {
 <p>first:  you could better have one event object like a button</p>
 <p>second: just put the class or id name and details of elements where you want to show to your visitors!</p>
 <hr/>
-<p>if you have many others page to use this effect, just put all elements together. The plugin will ignore elements which does not exist!</p>
+<p>if you have many other pages to use this effect, just put all elements together. The plugin will ignore elements which does not exist!</p>
