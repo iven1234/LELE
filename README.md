@@ -10,6 +10,7 @@ LELE
 <p>The plugin has the function to show some help or tips to one who first login your site or who click the help button.</p>
 
 <h2>Example</h2>
+<hr/>
 <pre>
 <code>
 $(document).ready(function() {
@@ -24,3 +25,7 @@ $(document).ready(function() {
 });
 </code>
 </pre>
+
+<h2>How it works</h2>
+<hr/>
+<p></p>
