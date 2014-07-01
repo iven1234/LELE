@@ -28,4 +28,5 @@ $(document).ready(function() {
 
 <h2>How it works</h2>
 <hr/>
-<p></p>
+<p>first:  you could better have one event object like a button</p>
+<p>second: just put the class or id name and details of position where you want to show to your visitors!</p>
