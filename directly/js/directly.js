@@ -27,6 +27,7 @@
 			var positionX; // the tip position-x
 			var positionY; // the tip position-y
 			var num = 0;
+			var tipNum = 0;
 			var maxHeight = $(window).height();
 
 			/* show directive tip function */
@@ -159,10 +160,10 @@
 				
 				if ($(tipArray[i].name).length != 0) {
 					num = i + 1;
+					tipNum++;
 					$("#tip-wrapper").remove();
 					
 					if (tipLength != 0) {
-//						console.log("长度测试�? + options.tip.length);
 						var tipnum = 0;
 						/* at first ,  initialize all the elements of option  */
 						for (var k = 0; k < tipLength; k++) {
@@ -175,9 +176,9 @@
 								$(tipArray[k].name).css("position", "relative");
 							}
 							if ($(tipArray[k].name).length == 0) {
-								tipnum++;
 								continue;
 							}
+							tipnum++;
 						}
 						
 //						console.log("next-tip中：" + "---i=" + i + "-----" + tipArray[i]);
@@ -188,15 +189,15 @@
 						showDirectiveTip(positionX, positionY, $(tipArray[i].name).width(), $(tipArray[i].name).height());
 						$(tipArray[i].name).css("zIndex", "4000");
 						$("#tip-details").html(tipArray[i].details);
-						if(tipnum == tipLength-1){
+						console.log("tipnum="+tipnum);
+						if(tipnum == tipNum){
 							$("#next-tip").html("完成");
 						}
 					}
 				}
 				else {
 					num = i + 1;
-//					console.log("执行next-tip方法�?不存在对象时，参数i=" + i + "num=" + num);
-					if(num==5){
+					if(num==tipLength){
 						tipClose();
 						return;
 					}
